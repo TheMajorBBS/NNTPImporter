@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<DebugType>none</DebugType>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <SelfContained>true</SelfContained>
+	  <PublishTrimmed>true</PublishTrimmed>
+	  <PublishSingleFile>true</PublishSingleFile>
+	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <Platforms>AnyCPU</Platforms>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+</Project>
