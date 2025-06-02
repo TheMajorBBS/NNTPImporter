@@ -1,6 +1,6 @@
 # NNTPImporter
 
-Allows for the downloading of newsgroups from an NNTP server and thern importing them into The Major BBS.
+Allows for the downloading of newsgroups from an NNTP server and then importing them into The Major BBS.
 
 ## Requirements
 - MBBS running the NNTP Server and Client modules
