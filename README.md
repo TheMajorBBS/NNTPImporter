@@ -14,9 +14,9 @@ Allows for the downloading of newsgroups from an NNTP server and then importing 
 ## NNTPImporter.cfg
 This file contains the newsgroups you wish to download, in the form of a group name followed by the last article downloaded.  When adding a new group, set this to 0 to download all articles.
 
-Example file:
-comp.lang.python 0
-comp.lang.c 0
+Example file:  
+comp.lang.python 0  
+comp.lang.c 0  
 
 The application will update this file as it downloads new articles and does not need to be modified unless adding a new group
 
