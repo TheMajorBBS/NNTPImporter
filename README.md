@@ -31,10 +31,10 @@ NNTPImporter [MBBS server] [import directory path] [interval in minutes] [NNTP s
 [interval in minutes] = how often to run the downloader task (default=5)  
 
 **Example (NNTP server requires authentication)**  
-NNTPImporter 192.168.1.99 nntp_downloads 15 news.eternal-september.org myusername mypassword nntp_downloads 10");  
+NNTPImporter 192.168.1.99 nntp_downloads 15 news.eternal-september.org myusername mypassword nntp_downloads 10
   
 **Example (NNTP does not require authentication)**  
-Console.WriteLine("\rNNTPImporter 192.168.1.99 nntp_downloads 15 news.another-provider.com nil nil nntp_downloads 10");  
+NNTPImporter 192.168.1.99 nntp_downloads 15 news.another-provider.com nil nil nntp_downloads 10 
   
 Both examples above will run the importer every 15 minutes and the downloader every 10 minutes.  
 Paths are relative unless specified.
