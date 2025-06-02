@@ -2,6 +2,8 @@
 
 Allows for the downloading of newsgroups from an NNTP server and then importing them into The Major BBS.
 
+**Binaries and sample config file can be found in the Dist folder**
+
 ## Requirements
 - MBBS running the NNTP Server and Client modules
 - Access to an external NNTP Server to collect the newgroups
