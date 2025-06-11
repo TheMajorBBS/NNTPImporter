@@ -87,6 +87,8 @@ class Program
 			{
 				try
 				{
+					Console.WriteLine($"{DateTime.Now} - (IMPORTER): Started importing messages into MBBS.");
+
 					string[] messageFiles = Directory.GetFiles(importerDirectoryPath, "*.txt");
 
 					if (messageFiles.Length == 0)
@@ -175,7 +177,7 @@ class Program
 
 						await writer.WriteLineAsync("QUIT");
 						serverResponse = await reader.ReadLineAsync();
-						Console.WriteLine($"{DateTime.Now} Server: {serverResponse}");
+						Console.WriteLine($"{DateTime.Now} - (IMPORTER): Finished importing messages into MBBS.");
 					}
 				}
 				catch (Exception ex)
@@ -278,6 +280,8 @@ class Program
 									group.LastArticleDownloaded = info.FirstArticle;
 								}
 
+								Console.WriteLine($"{DateTime.Now} - (DOWNLOADER): Downloading new articles for {group.Name}");
+
 								int totalArticlesDownloaded = 0;
 
 								for (int articleId = (group.LastArticleDownloaded+1); articleId <= info.LastArticle; articleId++)
@@ -303,7 +307,7 @@ class Program
 									totalArticlesDownloaded++;
 								}
 
-								Console.WriteLine($"{DateTime.Now} - (DOWNLOADER): {totalArticlesDownloaded} new articles downloaded for {group.Name}.");
+								Console.WriteLine($"{DateTime.Now} - (DOWNLOADER): {totalArticlesDownloaded} new articles downloaded for {group.Name}");
 							}
 						}
 						await writer.WriteLineAsync("QUIT");
